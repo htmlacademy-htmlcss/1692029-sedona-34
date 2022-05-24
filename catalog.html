@@ -8,10 +8,10 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="header-logo">
-          <img src="" alt="Логотип сайта Седона">
+          <img src="#" alt="Логотип сайта Седона">
         </a>
       <ul class="navigation-list"> 
-        <li><a href="#">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="#">О Седоне</a></li>
         <li><a href="#">Гостиницы</a></li>
       </ul>
@@ -25,6 +25,7 @@
     <main> 
       <section class="options">
       <h1>Гостиницы Седоны</h1>
+      <p><a href="index.html"><img src="#" alt="Главная страница"></a> &gt; Гостиницы </p> 
       <form action="https://echo.htmlacademy.ru/courses" method="post"> 
        <fieldset class="infrastructure">
         <legend class="infrastructure">Инфраструктура</legend>
@@ -45,19 +46,18 @@
         <label for="apartments">Апартаменты</label>
       </fieldset>
       <fieldset class="price">
-        <legend>Стоимость,₽</legend>
-        <label for="price-min">0</label>
-        0<input type="range" id="price-range" name="price-min" min="0" max="9000" step="1">от
-        <label for="price-max">9000</label>
-        9000<input type="range" id="price-range" name="price-max" min="0" max="9000" step="1">до
+        <legend>Стоимость, ₽</legend>
+        <label for="price-range-min">0</label>
+        0<input type="range" id="price-range-min" name="price-min" min="0" max="9000" step="1">от
+        <label for="price-range-max">9000</label>
+        9000<input type="range" id="price-range-max" name="price-max" min="0" max="9000" step="1">до
       </fieldset>
-      <input type="submit" name="apply" value="Применить">
-      <button type="reset" name="clean" value="Сбросить">
-      </button>
+      <button type="submit">Применить</button> 
+      <button type="reset">Сбросить</button>
       </form>
       </section>
-      <section class="type-of-showing">
-      <p>Найдено гостиниц:38</p>
+      <section> 
+      <p class="type-of-showing">Найдено гостиниц:38</p>
       <form class="sorting" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="sorting"> 
       <select class="sorting">
@@ -65,70 +65,89 @@
       </select>
       </fieldset> 
       <fieldset class="type-of-gallery"> 
-        <input type="image" src="" alt="Вид галереи мелкие значки">
-        <input type="image" src="" alt="Вид галереи крупные значки">
-        <input type="image" src="" alt="Вид галереи таблица">
+        <label><input type="radio" name="1">
+        </label>
+        <label><input type="radio" name="2">
+        </label>
+       <label><input type="radio" name="3">
+       </label>
       </fieldset>
         </form>
-      </section>
-      <section class="available-hotels">
+      <div class="available-hotels">
        <article class="amara-hotel">
-          <img src="" alt="Вид из отеля Амара">
+          <img src="#" alt="Вид из отеля Амара">
           <h2 class="title-hotel">Amara Resort&Spa</h2>
-         <div class="type-of-accomodation"><p>Гостиница</p></div>
-          <div class="price-from"><p>От 4000 Р</p></div>
+         <p class="type-of-accomodation">Гостиница</p>
+        <p class="price-from">От 4000 Р</p>
          <div class="buttons">
-           <form class="button-option" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="button" value="Подробнее">
-         <input type="button" value="В избранное">
-          </form>
+          <button>Подробнее</button>
+         <button>В избранное</button>
          </div>
-         <div class="stars"><img src="" alt="4 звезды"></div>
-          <div class="rating"><p>Рейтинг:8,5</p></div>
+         <div class="stars">
+           <ul>
+            <li><img src="#" alt="1 звезда"></li>
+            <li><img src="#" alt="1 звезда"></li>
+            <li><img src="#" alt="1 звезда"></li>
+            <li><img src="#" alt="1 звезда"></li>
+           </ul>
+          </div>
+         <p class="rating">Рейтинг:8,5</p>
       </article>
       <article class="villa-poco-diablo">
-        <img src="" alt="Вид из отеля Poco Diablo">
+        <img src="#" alt="Вид из отеля Poco Diablo">
         <h2 class="title-hotel">Villas at Poco Diablo</h2>
-       <div class="type-of-accomodation"><p>Гостиница</p></div>
-        <div class="price-from"><p>От 5000 Р</p></div>
+       <p class="type-of-accomodation">Гостиница</p>
+      <p class="price-from">От 5000 Р</p>
        <div class="buttons">
-         <form class="button-option" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="button" value="Подробнее">
-          <input type="button" value="В избранное">
-        </form>
+          <button>Подробнее</button>
+         <button>В избранное</button>
        </div>
-       <div class="stars"><img src="" alt="4 звезды"></div>
+       <div class="stars">
+        <ul>
+          <li><img src="#" alt="1 звезда"></li>
+          <li><img src="#" alt="1 звезда"></li>
+          <li><img src="#" alt="1 звезда"></li>
+          <li><img src="#" alt="1 звезда"></li>
+         </ul>
+       </div>
         <div class="rating"><p>Рейтинг:9,2</p></div>
     </article>
     <article class="desert-quail-inn">
-      <img src="" alt="Вид из отеля Desert Quail Inn ">
+      <img src="#" alt="Вид из отеля Desert Quail Inn ">
       <h2 class="title-hotel">Desert Quail Inn</h2>
-     <div class="type-of-accomodation"><p>Гостиница</p></div>
-      <div class="price-from"><p>От 2500 Р</p></div>
+     <p class="type-of-accomodation">Гостиница</p>
+      <p class="price-from">От 2500 Р</p>
      <div class="buttons">
-       <form class="button-option" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="button" value="Подробнее">
-        <input type="button" value="В избранное">
-      </form>
+      <button>Подробнее</button>
+      <button>В избранное</button>
      </div>
-     <div class="stars"><img src="" alt="3 звезды"></div>
+     <div class="stars">
+      <ul>
+        <li><img src="#" alt="1 звезда"></li>
+        <li><img src="#" alt="1 звезда"></li>
+        <li><img src="#" alt="1 звезда"></li>
+       </ul>
+     </div>
       <div class="rating"><p>Рейтинг:6,9</p></div>
   </article>
   <article class="gree-tree-inn">
-    <img src="" alt="Вид из отеля Green Tree">
-    <h2 class="title-hotel">Green Tree Inn</h2>
-   <div class="type-of-accomodation"><p>Гостиница</p></div>
-    <div class="price-from"><p>От 1500 Р</p></div>
+    <img src="#" alt="Вид из отеля Green Tree">
+   <p class="type-of-accomodation">Гостиница</p>
+    <p class="price-from">От 1500 Р</p>
    <div class="buttons">
-     <form class="button-option" action="https://echo.htmlacademy.ru/" method="post">
-      <input type="button" value="Подробнее">
-      <input type="button" value="В избранное">
-    </form>
+    <button>Подробнее</button>
+    <button>В избранное</button>
    </div>
-   <div class="stars"><img src="" alt="2 звезды"></div>
+   <div class="stars">
+    <ul>
+      <li><img src="#" alt="1 звезда"></li>
+      <li><img src="#" alt="1 звезда"></li>
+     </ul>
+   </div>
     <div class="rating"><p>Рейтинг:5,0</p></div>
 </article>
-      </section>
+</div>
+</section>
       <section>
         <div>
         <ul class="page-numbers">
@@ -136,7 +155,7 @@
           <li class="page-number-2"><a href="#">2</a></li>
           <li class="page-number-3"><a href="#">3</a></li>
           <li class="page-number-4"><a href="#">4</a></li>
-          <li class="page-number-undefinied"><a href="#">...</a></li>
+          <li class="page-number-others"><a href="#">...</a></li>
           <li class="page-number-10"><a href="#">10</a></li>
         </ul>
         </div>
