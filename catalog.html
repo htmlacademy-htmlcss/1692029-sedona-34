@@ -23,10 +23,12 @@
       </ul>
     </nav>
     </header>
-    <main> 
+    <main class="main-container"> 
+      <div class="page-container">
       <section class="options">
       <h1>Гостиницы Седоны</h1>
       <p class="breadcrumbs"><a href="index.html"><img src="images/Home.svg" alt="Главная страница" width="12" height="11.7"></a> &gt; Гостиницы </p> 
+      <span class="options-container">
       <form action="https://echo.htmlacademy.ru/courses" method="post"> 
        <fieldset class="infrastructure">
         <legend class="infrastructure-options">Инфраструктура</legend>
@@ -53,15 +55,20 @@
         <label for="price-range-max">9000</label>
         9000<input type="range" id="price-range-max" name="price-max" min="0" max="9000" step="1">до
       </fieldset>
+      <div class="submit-container">
       <button class="submit-options blue" type="submit">Применить</button> 
       <button class="reset-options" type="reset">Сбросить</button>
+      </div>
       </form>
       </section>
-      <section> 
+    </span>
+      <section class="container-sorting"> 
+        <div class="type-of-sorting">
       <p class="type-of-showing">Найдено гостиниц:38</p>
-      <form class="sorting" action="https://echo.htmlacademy.ru/" method="post">
+        </div>
+      <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="sorting"> 
-      <select class="sorting">
+      <select>
       <option value="Сначала дешевые">Сначала дешевые</option>
       </select>
       </fieldset> 
@@ -74,6 +81,7 @@
        </label>
       </fieldset>
         </form>
+        </section>
       <div class="available-hotels">
        <article class="amara-hotel">
           <img src="images/Amara-resort.jpg" alt="Вид из отеля Амара" width="300" height="211">
@@ -131,7 +139,7 @@
      </div>
       <div class="rating"><p>Рейтинг:6,9</p></div>
   </article>
-  <article class="gree-tree-inn">
+  <article class="green-tree-inn">
     <img src="images/Green-Tree-Inn.jpg" alt="Вид из отеля Green Tree" width="300" height="211">
     <h2 class="title-hotel">Green Tree Inn</h2>
    <p class="type-of-accomodation">Гостиница</p>
@@ -171,9 +179,9 @@
          </form>
         </div>
       </section>
-      <section class="subscribe-form"> 
-        <h3 class="subscribe-title">Подпишитесь на нашу рассылку</h3>
-        <p class="find-hotel-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-form-catalog"> 
+        <h3 class="subscribe-title-bl">Подпишитесь на нашу рассылку</h3>
+        <p class="find-hotel-description">Только полезная информация и никакого спама, <b> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-email">Email</label>
           <input class="field" placeholder="Ваш email" type="email" name="subscribe-email" id="subscribe-email" required>
@@ -181,8 +189,10 @@
           </button>
         </form>
       </section>
+      </div>
     </main>
-    <footer> 
+    <footer>
+      <div class="page-footer-container">
     <section class="footer-social">
       <ul class="footer-social-list">
          <li class="footer-social-item">
@@ -208,6 +218,7 @@
       <section> 
         <span class="visually-hidden"> HTML Academy </span>
       </section>
+    </div> 
     </footer>
   </body>
 </html>
