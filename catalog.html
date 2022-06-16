@@ -12,12 +12,12 @@
           <img src="images/Sedona-Logo.svg" alt="Логотип сайта Седона" width="139" height="70">
         </a>
       <ul class="navigation-list"> 
-        <li><a class="navigation-link" href="index.html">Главная</a></li>
-        <li><a class="navigation-link" href="#">О Седоне</a></li>
-        <li><a class="navigation-link" href="#">Гостиницы</a></li>
+        <li><a class="navigation-link" href="#">Главная</a></li>
+        <li><a  class="navigation-link" href="#">О Седоне</a></li>
+        <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
-      <ul class="navigation-list"> 
-        <li><a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
+      <ul class="navigation-user"> 
+        <li><a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span> </a></li>
         <li><a class="navigation-link" href="#"><span class="visually-hidden">Лайк</span></a></li>
         <li><a class="navigation-link want-there" href="#">Хочу сюда!</a></li>
       </ul>
@@ -26,8 +26,9 @@
     <main class="main-container"> 
       <div class="page-container">
       <section class="options">
+        <div class="filter">
       <h1>Гостиницы Седоны</h1>
-      <p class="breadcrumbs"><a href="index.html"><img src="images/Home.svg" alt="Главная страница" width="12" height="11.7"></a> &gt; Гостиницы </p> 
+      <p class="breadcrumbs"><a href="index.html"><img src="images/Home-icon-breadcrumbs.svg" alt="Главная страница" width="12" height="11.7"></a> &gt; Гостиницы </p> 
       <div>
       <form  class="options-container" action="https://echo.htmlacademy.ru/courses" method="post"> 
        <fieldset class="infrastructure">
@@ -58,6 +59,7 @@
       <div class="submit-container">
       <button class="submit-options blue" type="submit">Применить</button> 
       <button class="reset-options" type="reset">Сбросить</button>
+      </div>
       </div>
       </form>
       </section>
@@ -158,7 +160,7 @@
 </article>
 </div>
 </section>
-      <section>
+      <section class="pagination">
         <div>
         <ul class="page-numbers">
           <li class="page-number active"><a class="link-number-active" href="#">1</a></li>
@@ -169,8 +171,8 @@
           <li class="page-number"><a class="link-number" href="#">10</a></li>
         </ul>
         </div>
-        <div>
-         <form class="quantity-showed" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="quantity">
+         <form class="quantity-showed-form" action="https://echo.htmlacademy.ru/" method="post">
            <label>Гостиниц на странице:
           <select class="quantity-showed">
           <option value="4">4</option>
@@ -183,7 +185,7 @@
         <h3 class="subscribe-title-bl">Подпишитесь на нашу рассылку</h3>
         <p class="find-hotel-description-bl">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email">Email</label>
+          <label class="visually-hidden" for="subscribe-email">Email</label>
           <input class="field" placeholder="Ваш email" type="email" name="subscribe-email" id="subscribe-email" required>
           <button class="subscribe-button" type="submit"> Подписаться
           </button>
@@ -191,11 +193,11 @@
       </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer-index"> 
       <div class="page-footer-container">
     <section class="footer-social">
       <ul class="footer-social-list">
-         <li class="footer-social-item">
+      <li class="footer-social-item">
        <a class="button" href="#">
       <span class="visually-hidden">Вконтакте</span>
     </a>
@@ -210,15 +212,16 @@
         <span class="visually-hidden">Youtube</span>
      </a>
         </li>
-        </ul>
+      </ul>
       </section>
       <section class="contacts"> 
-        <p>8(812)812-12-12</p>
+        <h3 class="visually-hidden"> Контакт </h3>
+        <p>+7(812)812-12-12</p>
       </section>
       <section> 
-        <span class="visually-hidden"> HTML Academy </span>
+        <span class="visually-hidden logo-academy">HTML Academy</span>
       </section>
-    </div> 
+    </div>
     </footer>
   </body>
 </html>
