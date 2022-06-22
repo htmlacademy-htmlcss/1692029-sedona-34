@@ -239,6 +239,7 @@ flex-grow: 1;
 text-align: center;
 }
 
+
 .advantages-description {
 margin: 0;
 padding-bottom: 30px;
@@ -320,10 +321,13 @@ padding-bottom: 46px;
 }
 
 .advantages-card {
+    
     margin-top: 28px;
     padding: 0px;
     list-style: none;
 }
+
+
 
 .advantage-blue {
     color: #ffffff;
@@ -416,6 +420,7 @@ padding-bottom: 46px;
     width: 142px;
     padding: 0;
     margin: 0;
+    list-style: none;
     
 }
 
@@ -427,12 +432,8 @@ margin: 0;
 background-color: #82b3d3;
 }
 
-.footer-social {
-    margin-left: auto;
-    max-width: 190px;
-  }
 
-  
+
 .contacts {
     font-size: 40px;
     text-align: center;
@@ -445,6 +446,7 @@ background-color: #82b3d3;
     min-width: 115px;
     min-height: 34px;
     background-color: #82b3d3;
+    margin-left: auto;
 }
 
 .options h1{
@@ -462,11 +464,14 @@ background-color: #82b3d3;
     background-color: #82b3d3;
     margin: 0;
     padding-top: 35px;
-    padding-bottom: 70px;
+    
+    width: 1199px;
+    height: 403px;
 }
 
 .filter {
     width: 1059px;
+    margin: 35px 70px 70px 70px;
 }
 
 
@@ -480,9 +485,9 @@ background-color: #82b3d3;
 .infrastructure-options,
 .type-of-accomodation-options,
 .price-options {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
-    font-weight: bold;
+    padding: 0px;
 }
 
 
@@ -496,11 +501,10 @@ button {
 }
 
 .type-of-showing {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 36px;
     text-transform: uppercase;
     font-weight: 700;
-    width: 338px;
     margin: 0;
 }
 
@@ -514,7 +518,9 @@ button {
     font-size: 16px;
     line-height: 20px; 
     text-transform: uppercase;
-    width: 140px;
+    grid-row-start: 5;
+    grid-column-start: 2;
+    margin: 0;
 }
 
 .pagination {
@@ -522,6 +528,7 @@ button {
     flex-wrap: wrap;
     width: 1056px;
     margin: 0 auto;
+    padding-top: 96px;
     padding-bottom: 25px;
     align-items: center;
 }
@@ -532,6 +539,8 @@ button {
     gap: 8px;
     list-style: none;
     align-content: center;
+    padding: 0px;
+    margin: 0px;
 
 }
 
@@ -576,9 +585,14 @@ button {
 }
 
 .quantity-showed {
-    margin-left: 51px;
     width: 160px;
 }
+
+.quantity-of-hotels {
+    width: 175px;
+    margin-right: 51px;
+}
+
 
 .active {
     color: #000000;
@@ -607,13 +621,6 @@ background-color: #756157;
     font-weight: 400;
 }
 
-.footer-social-list {
-display: flex;
-flex-direction: column;
-margin: 0px;
-padding: 0px;
-list-style: none;
-}
 
 .options-container {
     display: flex;
@@ -644,7 +651,7 @@ list-style: none;
 .type-of-accomodation-options {
     display: flex;
     width: 145px;
-    margin-right: 167px;
+    margin-right: 175px;
     flex-direction: column;
 
 }
@@ -662,25 +669,42 @@ list-style: none;
 }
 
 .sorting {
-    display: flex;
-    width: 290px;
-    margin-right: 78px;
-    margin-left: auto;
-    color: #000000;
-    background-color: #ffffff
+   border: 0 none; 
+   width: 290px;
+   
 }
 
 .sorting-form {
     display: flex;
+    color: #000000;
+    background-color: #ffffff;
+    
+
 }
 
 .type-of-gallery {
+    display: flex;
     width: 160px;
+    border: 0;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-direction: row;
+    padding: 0px;
+   
+
+}
+
+.gallery-type {
+    width: 48px;
+    height: 48px;
+    background-color: #82b3d3;
+    margin: 0;
+
 }
 
 .type-of-sorting {
     width: 338px;
-    margin: 0%;
+    margin-right: 191px;
 }
 
 
@@ -689,11 +713,17 @@ list-style: none;
     flex-wrap: wrap;
     width: 1056px;
     margin: 0 auto;
-    gap: 18px;
+    gap: 38px;
+    
 }
 
 .card {
-    width: 340px;
+    display: grid;
+    grid-template-rows: 211px 28px 21px 37px 20px  20px;
+    grid-template-columns: 140px 140px;
+   row-gap: 16px;
+   column-gap: 20px;
+
 }
 
 .stars-container {
@@ -704,28 +734,74 @@ list-style: none;
     padding: 0;
 }
 
+.title-hotel {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+}
 
-.type-price-information {
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    flex-wrap: wrap;
-    gap: 20px;
+.image-card {
+    grid-column: 1/2; 
+    grid-row: 1;
 }
 
 .type-of-accomodation {
-    width: 140px;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    margin: 0;
 }
 
 .price-from {
-    width: 140px;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    margin: 0;
 }
 
-.stars-rating-information {
+
+.brown {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    margin: 0;
+    
+}
+
+.blue {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    margin: 0;
+}
+
+.stars-container {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    margin: 0;
+}
+
+
+.green {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    margin: 0;
+}
+
+.infrastructure,
+.type-of-accomodation-options,
+.price {
+    border: 0 none;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+
+.infrastructure-options {
     display: flex;
     flex-direction: row;
-    width: 300px;
-    align-items: flex-start;
+    width: 150px;
+
 }
 
+.infrastructure {
+    padding: 0px;
+    margin-left: 0px;
+}
 
