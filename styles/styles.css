@@ -114,6 +114,7 @@ align-items: center;
 .header-logo {
     display: flex;
     margin-left: 70px;
+    transform: translateY(5px);
 }
 
 .want-there {
@@ -177,6 +178,8 @@ text-transform: uppercase;
 }
 
 .advantages-town {
+grid-column-start: 1;
+grid-column-end: 4;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -188,6 +191,8 @@ list-style: none
 
 .advantages-list-bridge {
     display: flex;
+    grid-column-start: 1;
+ grid-column-end: 4;
     margin: 0;
     padding: 0;
 
@@ -218,6 +223,8 @@ list-style: none
 
 .advantages-lt-town {
     display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
 
 }
 
@@ -321,10 +328,12 @@ padding-bottom: 46px;
 }
 
 .advantages-card {
-    
+    display: grid;
     margin-top: 28px;
     padding: 0px;
     list-style: none;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 384px 384px 384px;
 }
 
 
