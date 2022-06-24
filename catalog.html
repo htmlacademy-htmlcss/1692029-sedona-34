@@ -32,7 +32,7 @@
       <div>
       <form  class="options-container" action="https://echo.htmlacademy.ru/courses" method="post"> 
        <fieldset class="infrastructure">
-        <legend class="infrastructure-options">Инфраструктура</legend>
+        <legend class="infrastructure-options"> <b>Инфраструктура </b></legend>
         <input id="swimming-pool" type="checkbox" name="swimming pool" checked>
         <label for="swimming-pool">Бассейн</label>
         <input id="parking" type="checkbox" name="parking" checked>
@@ -41,7 +41,7 @@
         <label for="wi-fi">WI-FI</label>
       </fieldset>
       <fieldset class="type-of-accomodation-options">
-        <legend class="type-of-accomodation">Тип жилья</legend>
+        <legend class="type-of-accomodation"><b>Тип жилья</b></legend>
         <input id="hotel" type="checkbox" name="hotel" checked>
         <label for="hotel">Гостиница</label>
         <input id="motel" type="checkbox" name="motel">
@@ -50,7 +50,7 @@
         <label for="apartments">Апартаменты</label>
       </fieldset>
       <fieldset class="price">
-        <legend class="price-options">Стоимость, ₽</legend>
+        <legend class="price-options"> <b>Стоимость, ₽</b></legend>
         <label for="price-range-min"></label>
         0<input type="range" id="price-range-min" name="price-min" min="0" max="9000" step="1">от
         <label for="price-range-max"></label>
@@ -75,28 +75,29 @@
       </select>
       </fieldset> 
       <fieldset class="type-of-gallery"> 
-        <label><input type="radio" name="1">
+        <div class="gallery-type">
+        <label><input  type="radio" name="1">
         </label>
+      </div>
+      <div class="gallery-type">
         <label><input type="radio" name="2">
         </label>
-       <label><input type="radio" name="3">
+      </div>
+      <div class="gallery-type">
+       <label ><input type="radio" name="3">
        </label>
+      </div>
       </fieldset>
         </form>
         </section>
       <div class="available-hotels">
        <article class="card">
-          <img src="images/Amara-resort.jpg" alt="Вид из отеля Амара" width="300" height="211">
+          <img  class="image-card" src="images/Amara-resort.jpg" alt="Вид из отеля Амара" width="300" height="211">
           <h2 class="title-hotel">Amara Resort&Spa</h2>
-          <div class="type-price-information">
          <p class="type-of-accomodation">Гостиница</p>
         <p class="price-from">От 4000 Р</p>
-          </div>
-         <div class="buttons">
           <button class="brown">Подробнее</button>
          <button class="blue">В избранное</button>
-         </div>
-         <div class="stars-rating-information">
            <ul class="stars-container">
             <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
             <li><img src="images/Star-rating.svg" alt="1 звезда"width="18" height="17" ></li>
@@ -104,20 +105,19 @@
             <li><img src="images/Star-rating.svg" alt="1 звезда"width="18" height="17" ></li>
            </ul>
          <p class="rating">Рейтинг:8,5</p>
-         </div>
       </article>
       <article class="card">
-        <img src="images/Villas-Poco-Diablo.jpg" alt="Вид из отеля Poco Diablo" width="300" height="211">
+        <img class="image-card" src="images/Villas-Poco-Diablo.jpg" alt="Вид из отеля Poco Diablo" width="300" height="211">
         <h2 class="title-hotel">Villas at Poco Diablo</h2>
-        <div class="type-price-information">
+    
         <p class="type-of-accomodation">Гостиница</p>
       <p class="price-from">От 5000 Р</p>
-        </div>
-       <div class="buttons">
+       
+       
           <button class="brown">Подробнее</button>
-        <button class="green">В избранное</button>
-       </div>
-       <div class="stars-rating-information">
+        <button class="green">В избранном</button>
+     
+       
         <ul class="stars-container">
           <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
           <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
@@ -125,46 +125,46 @@
           <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
          </ul>
         <p class="rating">Рейтинг:9,2</p>
-        </div>
+       
     </article>
     <article class="card desert">
-      <img src="images/Desert-Quail-Inn.jpg" alt="Вид из отеля Desert Quail Inn" width="300" height="211">
+      <img  class="image-card" src="images/Desert-Quail-Inn.jpg" alt="Вид из отеля Desert Quail Inn" width="300" height="211">
       <h2 class="title-hotel">Desert Quail Inn</h2>
-      <div class="type-price-information"> 
+      
      <p class="type-of-accomodation">Гостиница</p>
       <p class="price-from">От 2500 Р</p>
-      </div>
-     <div class="buttons">
+     
+   
       <button class="brown">Подробнее</button>
       <button class="blue">В избранное</button>
-     </div>
-     <div class="stars-rating-information">
+  
+     
       <ul class="stars-container">
         <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
         <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
         <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
        </ul>
       <p class="rating">Рейтинг:6,9</p>
-     </div>
+     
   </article>
   <article class="card">
-    <img src="images/Green-Tree-Inn.jpg" alt="Вид из отеля Green Tree" width="300" height="211">
+    <img class="image-card" src="images/Green-Tree-Inn.jpg" alt="Вид из отеля Green Tree" width="300" height="211">
     <h2 class="title-hotel">Green Tree Inn</h2>
-    <div class="type-price-information">
+   
    <p class="type-of-accomodation">Гостиница</p>
     <p class="price-from">От 1500 Р</p>
-    </div>
-   <div class="buttons">
+   
+ 
     <button class="brown">Подробнее</button>
     <button class="blue">В избранное</button>
-   </div>
-   <div class="stars-rating-information">
+ 
+ 
     <ul class="stars-container">
       <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
       <li><img src="images/Star-rating.svg" alt="1 звезда"width="18" height="17" ></li>
      </ul>
     <p class="rating">Рейтинг:5,0</p>
-   </div>
+   
 </article>
 </div>
 </section>
