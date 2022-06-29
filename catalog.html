@@ -36,17 +36,23 @@
       <section class="options">
         <div class="filter">
       <h1>Гостиницы Седоны</h1>
-      <p class="breadcrumbs"><a href="index.html"><img src="images/Home-icon-breadcrumbs.svg" alt="Главная страница" width="12" height="11.7"></a> &gt; Гостиницы </p> 
+      <p class="breadcrumbs"><a class="breadcrumbs-link" href="index.html"><svg class="breadcrumbs-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m.87 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z">
+      </svg></a> &gt; Гостиницы </p> 
       <div>
       <form  class="options-container" action="https://echo.htmlacademy.ru/courses" method="post"> 
        <fieldset class="infrastructure">
         <legend class="infrastructure-options"> <b>Инфраструктура </b></legend>
         <div class="swimming pool">
-        <input id="swimming-pool" type="checkbox" name="swimming pool" checked>
-        <label for="swimming-pool">Бассейн</label>
+          <label class="control">
+        <input class="visually-hidden control-input" id="swimming-pool" type="checkbox" name="swimming pool" checked>
+        <span class="control-mark"></span>
+       <span>Бассейн</span>
+      </label>
         <div class="parking">
-        <input id="parking" type="checkbox" name="parking" checked>
-        <label for="parking">Парковка</label>
+          <label class="control">
+        <input class="visually-hidden control-input" id="parking" type="checkbox" name="parking" checked>
+      <span>Парковка</span>
+    </label>
         </div>
         <div class="wi-fi">
         <input id="wi-fi" type="checkbox" name="wi-fi">
@@ -65,10 +71,29 @@
       </fieldset>
       <fieldset class="price">
         <legend class="price-options"> <b>Стоимость, ₽</b></legend>
-        <label for="price-range-min"></label>
-        0<input type="range" id="price-range-min" name="price-min" min="0" max="9000" step="1">от
-        <label for="price-range-max"></label>
-        9000<input type="range" id="price-range-max" name="price-max" min="0" max="9000" step="1">до
+
+        <div class="range-wrapper-inputs">
+          <label class="catalog-filter-label">
+             <input class="range-input" type="number" value="0" name="min-price"> от
+          </label>
+          <label class="catalog-filter-label">
+             <input class="range-input" type="number" value="9000" name="max-price" > до
+          </label>
+        </div>
+
+        <div class="range">
+          <div class="range-scale">
+            <div class="range-bar" style="right: 50px; width: 227px">
+              <button class="range-toggle toggle-min">
+                <span class="visually-hidden">Изменить минимальную цену</span>
+              </button>
+              <button class="range-toggle toggle-max">
+                <span class="visually-hidden">Изменить максимальную цену</span>
+              </button>
+            </div>
+          </div>
+         
+        </div>
       </fieldset>
       <div class="submit-container">
       <button class="submit-options blue" type="submit">Применить</button> 
@@ -82,12 +107,13 @@
         <div class="type-of-sorting">
       <p class="type-of-showing">Найдено гостиниц:38</p>
         </div>
-      <form class="sorting-form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="sorting"> 
-      <select>
+      <div class="sorting-form">
+      <div class="sorting select"> 
+      <select class="select-control">
       <option value="Сначала дешевые">Сначала дешевые</option>
       </select>
-      </fieldset> 
+      </div>
+      </div>
       <section class="type-of-gallery"> 
         <a class="gallery-type selected">
           <svg  class="gallery-1" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
@@ -191,13 +217,14 @@
         </ul>
         </div>
         <div class="quantity">
-         <form class="quantity-showed-form" action="https://echo.htmlacademy.ru/" method="post">
-           <label>Гостиниц на странице:
+           <span class="hotels-on-page" >Гостиниц на странице: </span>
+             <div class="quantity-hotels">
           <select class="quantity-showed">
           <option value="4">4</option>
           </select>
-        </label>
-         </form>
+        </div>
+       
+        
         </div>
       </section>
       <section class="subscribe-form-catalog"> 
