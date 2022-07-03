@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="whole-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="header-logo">
@@ -155,5 +156,66 @@
       </section>
     </div>
     </footer>
+  </div>
+  <div class="modal-container visually-hidden">  
+   
+    <div class="modal modal-auth">   
+  <button class="modal-close-button">   
+  <span class="visually-hidden">Закрыть</span>   
+ </button>   
+   <section class="modal-content">   
+    <h2 class="modal-title">Поиск гостиницы в Седоне</h2> 
+    
+    <p class="date-container">
+    <label for="date-arrival"><b>Дата Заезда:</b></label>  
+   <input class="input-date-arrival" type="text" name="date-arrival" placeholder="27 апреля 2020"> 
+   <button class="button-date" type="button"></button>
+   <span class="date mistake-arrival">Мы не можем отправить вас в прошлое.</span>
+  <p class="date-departure-container"
+  <label for="date-departure"><b>Дата Выезда:</b> </label>   
+  <input  class="input-date-departure" type="text" name="date-departure" placeholder="1 сентября 2021">
+     <button class="button-date-departure" type="button"></button>
+     <span class="date mistake-departure">На эти даты есть свободные места. Пока есть </span>
+    </p>
+    <section class="type-of-visitors">
+      <div class="adults-container">
+      <p class="adults"><b>Взрослые:</b></p>
+      <div class="visitors-quantity">
+      <span class="minus"><svg width="1" height="13" viewBox="0 0 1 13" xmlns="http://www.w3.org/2000/svg"><rect width="133" height="50" rx="4"/></svg>
+         </span>
+        <input  class="input-adults" type="text" class="text"  name="quantity" value="2">
+        <span class="plus">
+          <svg width="13" height="13" viewBox="0 0 12 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+         </span>
+      </div>
+    </div>
+       <div class="children-container">
+         <span class="tooltip-container">
+         <p class="children"><b>Дети:</b></p>
+        <span class="tooltip">
+        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+  <svg  class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9"xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path d="M0 0h1v9H0z"/></clipPath></defs></svg>
+       </button>
+       <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </span>
+</span>
+<div class="visitors-quantity-children">
+  <span class="minus"><svg width="1" height="13" viewBox="0 0 1 13" xmlns="http://www.w3.org/2000/svg"><rect width="133" height="50" rx="4"/></svg>
+     </span>
+    <input  class="input-children" type="text" class="text"  name="quantity" value="2">
+    <span class="plus">
+      <svg width="13" height="13" viewBox="0 0 12 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+     </span>
+  </div>
+       </div>
+        </section>
+  
+</div> 
+<div class="container-button">
+<button class="button-search">Найти</button>
+</div>
+ </section>  
+</div>   
+    </div>
   </body>
 </html>

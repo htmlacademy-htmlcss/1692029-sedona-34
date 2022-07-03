@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <div class="whole-container">
+    <header class="page-header page-header-catalog">
       <nav class="navigation">
         <a class="header-logo">
           <img src="images/Sedona-Logo.svg" alt="Логотип сайта Седона" width="139" height="70">
@@ -41,33 +42,54 @@
       <div>
       <form  class="options-container" action="https://echo.htmlacademy.ru/courses" method="post"> 
        <fieldset class="infrastructure">
-        <legend class="infrastructure-options"> <b>Инфраструктура </b></legend>
-        <div class="swimming pool">
+        <legend class="infrastructure-options"><b>Инфраструктура:</b></legend>
+        <ul class="catalog-filter-list">
+          <li class="catalog-filter-item">
           <label class="control">
         <input class="visually-hidden control-input" id="swimming-pool" type="checkbox" name="swimming pool" checked>
         <span class="control-mark"></span>
-       <span>Бассейн</span>
+       <span class="control-label">Бассейн</span>
       </label>
-        <div class="parking">
+          </li>
+            <li class="catalog-filter-item">
           <label class="control">
         <input class="visually-hidden control-input" id="parking" type="checkbox" name="parking" checked>
-      <span>Парковка</span>
+        <span class="control-mark"></span>
+        <span class="control-label">Парковка</span>
     </label>
-        </div>
-        <div class="wi-fi">
-        <input id="wi-fi" type="checkbox" name="wi-fi">
-        <label for="wi-fi">WI-FI</label>
-        </div>
-        </div>
+      </li>
+      <li class="catalog-filter-item">
+        <label class="control">
+        <input class="visually-hidden control-input" id="wi-fi" type="checkbox" name="wi-fi">
+        <span class="control-mark"></span>
+        <span class="control-label">WI-FI</span>
+        </label>
+      </li>
       </fieldset>
       <fieldset class="type-of-accomodation-options">
-        <legend class="type-of-accomodation"><b>Тип жилья</b></legend>
-        <input id="hotel" type="checkbox" name="hotel" checked>
-        <label for="hotel">Гостиница</label>
-        <input id="motel" type="checkbox" name="motel">
-        <label for="motel">Мотель</label>
-        <input id="apartments" type="checkbox" name="apartments">
-        <label for="apartments">Апартаменты</label>
+        <legend class="type-of-accomodation"><b>Тип жилья:</b></legend>
+        <ul class="catalog-filter-list">
+        <li class="catalog-filter-item">
+       <label class="control">
+        <input class=" visually-hidden control-input-radio"  type="radio" name="hotel" checked>
+        <span class="control-mark-radio"></span>
+       <span class="control-label">Гостиница</span>
+       </label>
+       </li>
+       <li class="catalog-filter-item">
+       <label class="control">
+        <input class=" visually-hidden control-input-radio"  type="radio" name="motel" checked>
+        <span class="control-mark-radio"></span>
+       <span class="control-label">Мотель</span>
+       </label>
+       </li>
+       <li class="catalog-filter-item">
+       <label class="control">
+        <input class=" visually-hidden control-input-radio"  type="radio" name="apartments" checked>
+        <span class="control-mark-radio"></span>
+       <span class="control-label">Апартаменты</span>
+       </label>
+       </li>
       </fieldset>
       <fieldset class="price">
         <legend class="price-options"> <b>Стоимость, ₽</b></legend>
@@ -83,7 +105,7 @@
 
         <div class="range">
           <div class="range-scale">
-            <div class="range-bar" style="right: 50px; width: 227px">
+            <div class="range-bar" style="right: 50px; width: 287px">
               <button class="range-toggle toggle-min">
                 <span class="visually-hidden">Изменить минимальную цену</span>
               </button>
@@ -275,5 +297,6 @@
       </section>
     </div>
     </footer>
+  </div>
   </body>
 </html>
