@@ -79,7 +79,6 @@ line-height: 26px;
 text-decoration: none;
 color: black;
 background-color:white;
-letter-spacing: -2px;
 }
 
 
@@ -306,8 +305,7 @@ font-size: 30px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
-letter-spacing: -3px;
-word-spacing: -2px;
+margin-bottom: 30px;
 }
 
 .advantages {
@@ -319,7 +317,6 @@ font-weight: 400;
 font-size: 22px;
 line-height: 28px;
 text-align: center;
-letter-spacing: -0.5px;
 margin: 0;
 }
 
@@ -335,13 +332,11 @@ text-transform: uppercase;
 
 .advantages-town-title {
 margin: 28px;
-letter-spacing: -1,5px;
 }
 
 .advantages-title {
     margin: 0px;
     padding-bottom: 30px;
-    letter-spacing: -2px;
 }
 
 
@@ -362,7 +357,6 @@ margin: 0;
 padding: 0;
 text-align: center;
 list-style: none;
-letter-spacing: -2px;
 }
 
 .advantages-list-bridge {
@@ -458,13 +452,12 @@ text-align: center;
 }
 
 .advantages-town-description  {
-    letter-spacing: normal;
+   
 }
 
 .advantages-description {
 margin: 0;
 padding-bottom: 30px;
-word-spacing: -1px;
 }
 
 .explain {
@@ -503,7 +496,7 @@ text-transform: uppercase;
 .find-hotel-title {
     margin: 0;
     padding-top: 91px;
-    letter-spacing: -3.5px;
+    padding-top: 71px;
 }
 
 .subscribe-title {
@@ -511,7 +504,6 @@ text-transform: uppercase;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    letter-spacing: -1px;
     
 }
 
@@ -524,7 +516,6 @@ text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 55px;
-  letter-spacing: -1px;
   
 }
 
@@ -596,8 +587,7 @@ padding-bottom: 46px;
     margin-top: 0;
     margin-bottom: 105px;
     border-radius: 4px;
-  
-    letter-spacing: -2px;
+    margin-bottom: 93px;
 }
 
 .find-hotel:hover {
@@ -641,7 +631,7 @@ padding-bottom: 46px;
     width: 200px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    letter-spacing: -2px;
+    
 }
 
 .subscribe-button:hover {
@@ -676,7 +666,7 @@ padding-bottom: 46px;
     color: #000000;
     margin: 0;
     padding-bottom: 29px;
-    letter-spacing: -3px;
+    
 }
 
 .subscribe-form-catalog {
@@ -782,7 +772,7 @@ margin: 0;
   font-weight: 700;  
   margin: 0;
   padding: 0;
-  letter-spacing: -6px;
+  
   
 }
 
@@ -1001,7 +991,8 @@ display: flex;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
+    
 }
 
 
@@ -1225,7 +1216,6 @@ background-color: rgba(97, 80, 72, 1);
     -webkit-box-direction: normal;
        
             flex-direction: row;
-    letter-spacing: -1px;
 }
 
 .infrastructure {
@@ -1714,7 +1704,7 @@ background-color: rgba(97, 80, 72, 1);
     padding-bottom: 63px;
     margin: 0px;
     font-size: 30px;
-    letter-spacing: -3px;
+
 }
 
 
@@ -1756,12 +1746,15 @@ background-color: rgba(97, 80, 72, 1);
   
     display: flex;
     padding-top: 12px;
+    font-weight: 700px;
 }
 
 .date-departure {
     grid-column: 1;
     grid-row: 1;
+    font-weight: 700px;
 }
+
 
 
 
@@ -1788,7 +1781,7 @@ font-size: 18px;
     line-height: 21px;
     grid-column: 2;
     grid-row: 2;
-    letter-spacing: -1px;
+    
 }
 
 .mistake-departure {
@@ -1796,7 +1789,7 @@ font-size: 18px;
     line-height: 21px;
     grid-column: 2;
     grid-row: 2;
-    letter-spacing: -1px;
+    
 }
 
 .button-date {
@@ -1858,11 +1851,15 @@ font-size: 18px;
 
 .adults {
     padding: 0px;
+    font-weight: 700px;
 }
+
 
 .children {
     padding: 0px;
+    font-weight: 700px;
 }
+
 
 .visitors-quantity-children {
     position: relative;
