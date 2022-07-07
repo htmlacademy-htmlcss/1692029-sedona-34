@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
       <link rel="stylesheet" href="styles/styles.css">
+      <link rel="icon" href="favicon.ico">
    </head>
    <body>
       <div class="whole-container">
@@ -41,11 +42,11 @@
             <div class="page-container">
                <section class="options">
                   <div class="filter">
-                     <h1>Гостиницы Седоны</h1>
+                     <h1 class="hotels-of-sedona">Гостиницы Седоны</h1>
                      <p class="breadcrumbs">
                         <a class="breadcrumbs-link" href="index.html">
                            <svg class="breadcrumbs-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="m.87 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="m.87 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"> 
                            </svg>
                         </a>
                         &gt; Гостиницы 
@@ -57,50 +58,52 @@
                               <ul class="catalog-filter-list">
                               <li class="catalog-filter-item">
                                  <label class="control">
-                                 <input class="visually-hidden control-input" id="swimming-pool" type="checkbox" name="swimming pool" checked>
+                                 <input class="visually-hidden control-input" id="swimming-pool" type="checkbox" name="type" checked>
                                  <span class="control-mark"></span>
                                  <span class="control-label">Бассейн</span>
                                  </label>
                               </li>
                               <li class="catalog-filter-item">
                                  <label class="control">
-                                 <input class="visually-hidden control-input" id="parking" type="checkbox" name="parking" checked>
+                                 <input class="visually-hidden control-input" id="parking" type="checkbox" name="type" checked>
                                  <span class="control-mark"></span>
                                  <span class="control-label">Парковка</span>
                                  </label>
                               </li>
                               <li class="catalog-filter-item">
                                  <label class="control">
-                                 <input class="visually-hidden control-input" id="wi-fi" type="checkbox" name="wi-fi">
+                                 <input class="visually-hidden control-input" id="wi-fi" type="checkbox" name="type">
                                  <span class="control-mark"></span>
                                  <span class="control-label">WI-FI</span>
                                  </label>
                               </li>
+                              </ul>
                            </fieldset>
                            <fieldset class="type-of-accomodation-options">
                               <legend class="type-of-accomodation"><b>Тип жилья:</b></legend>
                               <ul class="catalog-filter-list">
                               <li class="catalog-filter-item">
                                  <label class="control">
-                                 <input class=" visually-hidden control-input-radio"  type="radio" name="hotel" checked>
+                                 <input class=" visually-hidden control-input-radio"  type="radio" name="type" checked>
                                  <span class="control-mark-radio"></span>
                                  <span class="control-label">Гостиница</span>
                                  </label>
                               </li>
                               <li class="catalog-filter-item">
                                  <label class="control">
-                                 <input class=" visually-hidden control-input-radio"  type="radio" name="motel">
+                                 <input class=" visually-hidden control-input-radio"  type="radio" name="type">
                                  <span class="control-mark-radio"></span>
                                  <span class="control-label">Мотель</span>
                                  </label>
                               </li>
                               <li class="catalog-filter-item">
                                  <label class="control">
-                                 <input class=" visually-hidden control-input-radio"  type="radio" name="apartments">
+                                 <input class=" visually-hidden control-input-radio"  type="radio" name="type">
                                  <span class="control-mark-radio "></span>
                                  <span class="control-label">Апартаменты</span>
                                  </label>
                               </li>
+                              </ul>
                            </fieldset>
                            <fieldset class="price">
                               <legend class="price-options"> <b>Стоимость, ₽</b></legend>
@@ -173,9 +176,9 @@
                      <button class="blue">В избранное</button>
                      <ul class="stars-container">
                         <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда"width="18" height="17" ></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда"width="18" height="17" ></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда"width="18" height="17" ></li>
+                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
+                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
+                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
                      </ul>
                      <p class="rating">Рейтинг:8,5</p>
                   </article>
@@ -208,7 +211,7 @@
                      </ul>
                      <p class="rating">Рейтинг:6,9</p>
                   </article>
-                  <article class="card">
+                  <article class="card green-tree">
                      <img class="image-card" src="images/Green-Tree-Inn.jpg" alt="Вид из отеля Green Tree" width="300" height="211">
                      <h2 class="title-hotel">Green Tree Inn</h2>
                      <p class="type-of-accomodation">Гостиница</p>
@@ -217,7 +220,7 @@
                      <button class="blue">В избранное</button>
                      <ul class="stars-container">
                         <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда"width="18" height="17" ></li>
+                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
                      </ul>
                      <p class="rating">Рейтинг:5,0</p>
                   </article>
@@ -244,7 +247,7 @@
                   </div>
                </section>
                <section class="subscribe-form-catalog">
-                  <h3 class="subscribe-title-bl">Подпишитесь на нашу рассылку</h3>
+                  <h3 class="subscribe-title-bl">Подпишитесь на рассылку</h3>
                   <p class="find-hotel-description-bl">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
                   <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                      <label class="visually-hidden" for="subscribe-email">Email</label>
@@ -253,7 +256,7 @@
                      </button>
                   </form>
                </section>
-            </div>
+           
          </main>
          <footer class="footer-index">
             <div class="page-footer-container">
