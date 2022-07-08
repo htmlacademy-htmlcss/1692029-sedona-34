@@ -4,14 +4,14 @@
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
       <link rel="stylesheet" href="styles/styles.css">
-      <link rel="icon" href="favicon.ico">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-sedona.png">
    </head>
    <body>
       <div class="whole-container">
          <header class="page-header page-header-catalog">
             <nav class="navigation">
                <a class="header-logo">
-               <img src="images/Sedona-Logo.svg" alt="Логотип сайта Седона" width="139" height="70">
+               <img src="images/sedona-logo.svg" alt="Логотип сайта Седона" width="139" height="70">
                </a>
                <ul class="navigation-list">
                   <li><a class="navigation-link" href="index.html">Главная</a></li>
@@ -84,7 +84,7 @@
                               <ul class="catalog-filter-list">
                               <li class="catalog-filter-item">
                                  <label class="control">
-                                 <input class=" visually-hidden control-input-radio"  type="radio" name="type" checked>
+                                 <input class="visually-hidden control-input-radio"  type="radio" name="type" checked>
                                  <span class="control-mark-radio"></span>
                                  <span class="control-label">Гостиница</span>
                                  </label>
@@ -117,7 +117,7 @@
                               </div>
                               <div class="range">
                                  <div class="range-scale">
-                                    <div class="range-bar" style="right: 50px; width: 287px">
+                                    <div class="range-bar">
                                        <button class="range-toggle toggle-min" type="button">
                                        <span class="visually-hidden">Изменить минимальную цену</span>
                                        </button>
@@ -150,17 +150,17 @@
                   </div>
                   <section class="type-of-gallery">
                      <a class="gallery-type selected" href="#">
-                        <svg  class="gallery-1" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg  class="gallery-1" width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
                         </svg>
                      </a>
                      <a class="gallery-type" href="#">
-                        <svg  class="gallery-2" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg  class="gallery-2" width="16" height="14"  aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
                         </svg>
                      </a>
                      <a class="gallery-type" href="#">
-                        <svg class="gallery-3" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="gallery-3" width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
                         </svg>
                      </a>
@@ -169,59 +169,59 @@
                </section>
                <div class="available-hotels">
                   <article class="card">
-                     <img  class="image-card" src="images/Amara-resort.jpg" alt="Вид из отеля Амара" width="300" height="211">
+                     <img  class="image-card" src="images/amara-resort.jpg" alt="Вид из отеля Амара" width="300" height="211">
                      <h2 class="title-hotel">Amara Resort&Spa</h2>
                      <p class="type-of-accomodation">Гостиница</p>
                      <p class="price-from">От 4000 Р</p>
-                     <button class="brown">Подробнее</button>
-                     <button class="blue">В избранное</button>
+                     <button class="brown" type="button">Подробнее</button>
+                     <button class="blue" type="button" >В избранное</button>
                      <ul class="stars-container">
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
                      </ul>
                      <p class="rating">Рейтинг:8,5</p>
                   </article>
                   <article class="card">
-                     <img class="image-card" src="images/Villas-Poco-Diablo.jpg" alt="Вид из отеля Poco Diablo" width="300" height="211">
+                     <img class="image-card" src="images/villas-poco-diablo.jpg" alt="Вид из отеля Poco Diablo" width="300" height="211">
                      <h2 class="title-hotel">Villas at Poco Diablo</h2>
                      <p class="type-of-accomodation">Гостиница</p>
                      <p class="price-from">От 5000 Р</p>
-                     <button class="brown">Подробнее</button>
-                     <button class="green">В избранном</button>
+                     <button class="brown" type="button">Подробнее</button>
+                     <button class="green" type="button">В избранном</button>
                      <ul class="stars-container">
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
                      </ul>
                      <p class="rating">Рейтинг:9,2</p>
                   </article>
                   <article class="card desert">
-                     <img  class="image-card" src="images/Desert-Quail-Inn.jpg" alt="Вид из отеля Desert Quail Inn" width="300" height="211">
+                     <img  class="image-card" src="images/desert-quail-inn.jpg" alt="Вид из отеля Desert Quail Inn" width="300" height="211">
                      <h2 class="title-hotel">Desert Quail Inn</h2>
                      <p class="type-of-accomodation">Гостиница</p>
                      <p class="price-from">От 2500 Р</p>
-                     <button class="brown">Подробнее</button>
-                     <button class="blue">В избранное</button>
+                     <button class="brown" type="button">Подробнее</button>
+                     <button class="blue" type="button">В избранное</button>
                      <ul class="stars-container">
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
                      </ul>
                      <p class="rating">Рейтинг:6,9</p>
                   </article>
                   <article class="card green-tree">
-                     <img class="image-card" src="images/Green-Tree-Inn.jpg" alt="Вид из отеля Green Tree" width="300" height="211">
+                     <img class="image-card" src="images/green-tree-inn.jpg" alt="Вид из отеля Green Tree" width="300" height="211">
                      <h2 class="title-hotel">Green Tree Inn</h2>
                      <p class="type-of-accomodation">Гостиница</p>
                      <p class="price-from">От 1500 Р</p>
-                     <button class="brown">Подробнее</button>
-                     <button class="blue">В избранное</button>
+                     <button class="brown" type="button">Подробнее</button>
+                     <button class="blue" type="button">В избранное</button>
                      <ul class="stars-container">
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17"></li>
-                        <li><img src="images/Star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17"></li>
+                        <li><img src="images/star-rating.svg" alt="1 звезда" width="18" height="17" ></li>
                      </ul>
                      <p class="rating">Рейтинг:5,0</p>
                   </article>
@@ -252,7 +252,7 @@
                   <p class="find-hotel-description-bl">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
                   <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                      <label class="visually-hidden" for="subscribe-email">Email</label>
-                     <input class="field field-catalog" placeholder="Ваш email" type="email" name="subscribe-email" id="subscribe-email" required>
+                     <input class="field field-catalog" placeholder="Ваш email" type="email" id="subscribe-email" required>
                      <button class="subscribe-button" type="submit"> Подписаться
                      </button>
                   </form>
