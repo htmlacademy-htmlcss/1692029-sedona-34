@@ -883,7 +883,7 @@ color: rgba(255, 255, 255, 0.6);
 
 
 
-button {
+.button {
     font-size: 16px;
     line-height: 20px;  
     text-transform: uppercase;
@@ -2270,6 +2270,3 @@ margin-right: 18px;
     color: rgb(255, 255, 255, 0.3);
 }
 
-header,main, footer {
-    background-color: #ffffff;
-}
