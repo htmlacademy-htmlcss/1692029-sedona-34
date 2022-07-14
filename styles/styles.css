@@ -93,7 +93,7 @@ background-color:white;
 }
 
 .navigation-link:focus {
-    outline: none;
+outline-offset: unset;
     color: #756157;
     fill: #6C9E42;
 }
@@ -205,11 +205,14 @@ fill: #68A2CA;
 }
 
 
-.logo-academy:focus-within {
-    outline: none;
+.logo-academy:focus .academy {
     fill: rgba(117, 97, 87, 1);
+    outline: none;
 }
 
+.logo-academy:focus {
+    outline: none;
+}
 
 .academy {
     fill: #000000;
@@ -850,6 +853,10 @@ outline: none;
 
 }
 
+
+.social-link:focus .social {
+fill: #68A2CA;
+}
 
 .social {
     position: absolute;
@@ -1636,7 +1643,7 @@ background-color: rgba(97, 80, 72, 1);
       -moz-column-gap: 16px;
            column-gap: 16px;
    padding: 20px;
-   
+   height: min-content;
 
 }
 
