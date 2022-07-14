@@ -184,7 +184,7 @@ fill: #68A2CA;
 
   .academy {
   position: absolute;
-  top: 5px;
+  top: 8px;
   right: 300px;
   bottom: 0;
   left: 0;
@@ -464,6 +464,7 @@ list-style: none;
 
 .favorites-icon {
     margin-right: 19px;
+    margin-left: 10px;
 }
 
 
@@ -799,7 +800,7 @@ padding-bottom: 46px;
     width: 1060px;
     -webkit-box-align: center;
             align-items: center;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-bottom: 30px;
   } 
 
@@ -895,8 +896,8 @@ fill: #68A2CA;
     font-size: 40px;
     text-align: center;
     margin: 0px;
-    padding-top: 3px;
-    padding-left: 35px;
+    padding-top: 7px;
+    padding-left: 34px;
     width: 720px;
 }
 
@@ -952,7 +953,7 @@ fill: #68A2CA;
     font-size: 16px;
     margin: 0;
     padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
 }
 
 .breadcrumbs-icon:hover {
@@ -969,11 +970,7 @@ fill: #68A2CA;
     margin-right: 10px;
 }
 
-.breadcrumbs-link:focus-visible,
-.breadcrumbs-icon:focus {
-    fill: #ffffff;
-    outline: none;
-}
+
 
 .breadcrumbs-icon {
     fill: white;
@@ -991,7 +988,6 @@ fill: #68A2CA;
 
 .pagination-hotel:focus {
     color: #ffffff;
-    outline: none;
 }
 
 .pagination-hotel:active {
@@ -999,11 +995,16 @@ fill: #68A2CA;
         }
     
 .infrastructure-options,
-.type-of-accomodation-options,
-.price-options {
+.type-of-accomodation-options {
     font-size: 18px;
     
-    padding-bottom: 35px;
+    padding-bottom: 33px;
+}
+
+
+.price-options {
+    font-size: 18px;
+padding-bottom: 35px;
 }
 
 
@@ -1107,7 +1108,7 @@ display: flex;
     border: 1px solid rgba(255, 255, 255, 1);
     height: 48px;
     width: 287px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     border-radius: 4px;
     position: relative;
     outline: none;
@@ -1128,7 +1129,7 @@ display: flex;
   
   .range-input {
     
-    padding: 0 10px;
+    padding: 0 10px 0 15px;
     font: inherit;
     background-color: transparent;
     border: 2px solid #fff;
@@ -1286,9 +1287,7 @@ border-radius: 4px;
 }
 
 
-.link-number-active:focus {
-    outline: none;
-}
+
 
 .pagination-hotel {
     text-decoration: none;
@@ -1484,7 +1483,7 @@ background-color: rgba(97, 80, 72, 1);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    margin-top: 60px;
+    margin-top: 58px;
 }
 
 
@@ -1565,7 +1564,7 @@ background-color: rgba(97, 80, 72, 1);
 }
 
 .reset-options {
-    margin-top: 20px;
+    margin-top: 17px;
     padding: 0px;
 }
 
@@ -1643,7 +1642,7 @@ background-color: rgba(97, 80, 72, 1);
         flex-wrap: wrap;
     width: 1056px;
     margin: 0 auto;
-    column-gap: 20px;
+    column-gap: 22px;
     margin-bottom: 64px;
     
 }
@@ -1715,7 +1714,7 @@ background-color: rgba(97, 80, 72, 1);
 }
 
 .type-of-accom {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 
@@ -1814,7 +1813,7 @@ background-color: rgba(97, 80, 72, 1);
 
 .control-mark {
     position: absolute;
-    top: 2px;
+    top: 0px;
     left: 0;
     width: 20px;
     height: 20px;
@@ -1835,14 +1834,11 @@ background-color: rgba(97, 80, 72, 1);
 }
 
 
-.control:focus.control-mark {
-    background-color: rgba(255, 255, 255, 0.6);
-    outline: 3px solid #83B3D3;
-}
 
-.control:focus-visible .control-mark {
-    background-color: rgba(255, 255, 255, 0.6);
-    outline: 3px solid #83B3D3;
+.control-input:focus + .control-mark,
+.control-input:focus-visible + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .control:active .control-mark {
@@ -1854,7 +1850,6 @@ background-color: rgba(97, 80, 72, 1);
     background-color: rgba(255, 255, 255, 0.6);
     
 }
-
 
 
 
@@ -1882,11 +1877,7 @@ background-color: rgba(97, 80, 72, 1);
   }
 
  
-  .control-mark-radio:focus {
-   outline: 2px solid #68A2CA;
-   outline-offset: -2px;
-  }
-
+  
 
   .control-mark-radio:hover {
     background-color: rgba(255, 255, 255, 0.6);
@@ -1908,6 +1899,14 @@ background-color: rgba(97, 80, 72, 1);
     border-radius: 50%;
     content: "";
 }
+
+
+.control-input-radio:focus + .control-mark-radio,
+.control-input-radio:focus-visible + .control-mark-radio {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
 
 .infrastructure {
     padding: 0px;
@@ -1956,7 +1955,7 @@ background-color: rgba(97, 80, 72, 1);
   .modal-close-button {
     position: absolute;
     padding: 20px;
-    top: 48px;
+    top: 46px;
     right: 70px;
     width: 53px;
     height: 53px;
@@ -1977,6 +1976,14 @@ background-color: rgba(97, 80, 72, 1);
     border: 3px solid #83B3D3;
     outline: none;
 }
+
+
+.modal-close-button:focus-visible {
+    background-color: #E6E6E6;
+    border: 3px solid #83B3D3;
+    outline: none;
+}
+
 
 .modal-close-button:active {
     background-color: #E6E6E6;
@@ -2265,12 +2272,6 @@ align-self: flex-end;
     fill: #000000;
 }
 
-.minus-icon:focus,
-.plus-icon:focus {
-    fill: #000000;
-
-    outline: 2px solid #83B3D3;
-}
 
 
 
@@ -2292,6 +2293,44 @@ align-self: flex-end;
     background-color: transparent;
     
 }
+
+.minus:focus .minus-icon {
+    fill: #000000;
+    outline: 2px solid #83B3D3;
+}
+
+
+.minus:focus-visible {
+    outline: none;
+}
+
+.plus:focus .plus-icon {
+    fill: #000000;
+    outline: 2px solid #83B3D3;
+}
+
+.plus:focus-visible {
+    outline: none;
+}
+
+.minus-children:focus-visible {
+    outline: none;
+}
+
+.plus-children:focus-visible {
+    outline: none;
+}
+
+.plus-children:focus .plus-icon {
+    fill: #000000;
+    outline: 2px solid #83B3D3;
+}
+
+.minus-children:focus .minus-icon {
+    fill: #000000;
+    outline: 2px solid #83B3D3;
+}
+
 
 .plus-icon {
 min-height: 25px;
@@ -2374,7 +2413,7 @@ padding-right: 6px;
 
   .tooltip {
     
-   top: 15px;
+   top: 9px;
     left:85px;
  
     
@@ -2418,7 +2457,7 @@ padding-right: 6px;
     height: 9px;
     position:absolute;
     z-index: 1;
-    left: 120px;
+    left: 115px;
     bottom: 100%;
   }
     
