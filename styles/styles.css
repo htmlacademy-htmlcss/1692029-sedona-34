@@ -92,11 +92,13 @@ background-color:white;
     color: rgba(0, 0, 0, 0.3);
 }
 
-.navigation-link:focus {
-outline-offset: unset;
+.navigation-link:focus,
+.navigation-link:focus-visible
+ {
     color: #756157;
-    fill: #6C9E42;
+    outline: none;
 }
+
 
 
 
@@ -174,8 +176,9 @@ fill: #68A2CA;
     outline: 1px solid #68A2CA;
       }
 
-  .navigation-for-user:focus {
-        box-shadow: inset 0 0 0 4px #e7e7e7;
+  .navigation-for-user:focus svg,
+  .navigation-for-user:focus-visible {
+        fill: #3F5E72;
         outline: none;
       }
 
@@ -235,9 +238,10 @@ fill: #68A2CA;
 }
 
 
-.catalog-logo:focus {
+.catalog-logo:focus img,
+.catalog-logo:focus-visible{
 outline: none;
-box-shadow: inset 0 0 0 4px #e7e7e7;
+background-color: rgba(131, 179, 211, 0.3);
 }
 
 .main-container {
@@ -641,7 +645,7 @@ padding-bottom: 46px;
         width: 1060px;
         -webkit-box-align: center;
                 align-items: center;
-        padding-top: 40px;
+        padding-top: 34px;
         padding-bottom: 30px;
       } 
 
@@ -795,7 +799,7 @@ padding-bottom: 46px;
     width: 1060px;
     -webkit-box-align: center;
             align-items: center;
-    padding-top: 34px;
+    padding-top: 30px;
     padding-bottom: 30px;
   } 
 
@@ -853,6 +857,10 @@ outline: none;
 
 }
 
+
+.social-link:focus-visible {
+    outline: none;
+}
 
 .social-link:focus .social {
 fill: #68A2CA;
@@ -951,10 +959,7 @@ fill: #68A2CA;
     fill: rgba(255, 255, 255, 0.6);
     }
 
-.breadcrumbs-icon:focus {
-    fill: #ffffff;
-    outline: none;
-}
+
 
 .breadcrumbs-icon:active {
         fill: rgba(255, 255, 255, 0.6);
@@ -964,6 +969,11 @@ fill: #68A2CA;
     margin-right: 10px;
 }
 
+.breadcrumbs-link:focus-visible,
+.breadcrumbs-icon:focus {
+    fill: #ffffff;
+    outline: none;
+}
 
 .breadcrumbs-icon {
     fill: white;
@@ -1275,6 +1285,10 @@ border-radius: 4px;
     padding: 11px 23px;
 }
 
+
+.link-number-active:focus {
+    outline: none;
+}
 
 .pagination-hotel {
     text-decoration: none;
@@ -1820,27 +1834,29 @@ background-color: rgba(97, 80, 72, 1);
     content: "";
 }
 
-.control-mark:hover {
-background-color: rgba(255, 255, 255, 0.6);
-}
 
-
-.control-mark:focus {
+.control:focus.control-mark {
     background-color: rgba(255, 255, 255, 0.6);
-    outline: 2px solid #83B3D3;
-    outline-offset: -2px;
+    outline: 3px solid #83B3D3;
 }
 
-.control-mark:active {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-.control-input ~ .control-mark:focus,{
+.control:focus-visible .control-mark {
     background-color: rgba(255, 255, 255, 0.6);
-    outline: 2px solid #83B3D3;
-    outline-offset: -2px;
+    outline: 3px solid #83B3D3;
 }
+
+.control:active .control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+   
+}
+
+.control:hover .control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+    
+}
+
+
+
 
   .control-mark-radio {
     position: absolute;    
@@ -1880,11 +1896,7 @@ background-color: rgba(255, 255, 255, 0.6);
         background-color: rgba(255, 255, 255, 0.3);
     }
 
-  .control:focus + .control-mark-radio {
-    border-color:#83B3D3;
-    outline: none;
-  }
-
+ 
 
 .control-mark-radio:checked {
     position: absolute;
@@ -1902,6 +1914,10 @@ background-color: rgba(255, 255, 255, 0.6);
     margin-left: 0px;
    
 }
+
+
+
+
 
 .modal-container {
     position: fixed;
